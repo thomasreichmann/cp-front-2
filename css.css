@@ -1,0 +1,85 @@
+:root {
+    --color-pink: #dc143c;
+    --color-faded: #666;
+    --color-shadow: #AAA;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0
+}
+
+main {
+    width: 80vw;
+    height: 90vh;
+
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 48%;
+
+    & h4 {
+        margin-bottom: 4px;
+        color: var(--color-pink);
+        font-weight: 600;
+    }
+
+    & h3 {
+        margin-top: 0;
+    }
+
+    & p {
+        margin: 48px 0;
+        width: 90%;
+    }
+
+    & img {
+        width: 70%;
+        height: max-content;
+
+        border-radius: 7px;
+        box-shadow: 1px 1px 6px var(--color-shadow);
+    }
+}
+
+#img-wrapper {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.button-wrapper {
+    display: flex;
+
+    & a {
+        padding: 5px 30px;
+
+        cursor: pointer;
+    }
+
+    & #comprar-agora {
+        border: 1px solid black;
+        font-weight: 600;
+    }
+
+    & #mais-informacoes {
+        color: var(--color-faded);
+        padding-left: 12px;
+
+        &:hover {
+            color: var(--color-pink);
+        }
+    }
+}
